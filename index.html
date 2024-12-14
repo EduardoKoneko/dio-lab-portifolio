@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" data-theme="dark">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,18 +13,36 @@
     </head>
     <body>
         <header class="header">
+            <nav class="header__nav">
+                <ul class="menu menu--principal">
+                    <li class="menu__item"><a class="menu__link active" href="#home">
+                        <span class="menu__text">Home</span>
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="#projects">
+                        <span class="menu__text">Projetos</span>
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="#sobre">
+                        <span class="menu__text">Sobre</span>
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contato">
+                        <span class="menu__text">Contato</span>
+                    </a></li>
+                </ul>
+            </nav>
             <div class="header_brand">
                 <img class="brand__logo" src="./assets/img/knightNatal.png" alt="Logo Koneko">
+            </div>
+            <div class="header__toggle">
                 <i id="toggleTheme" class="bi bi-sun"></i>
             </div>
         </header>
-        <nav>
+        <nav class="nav--mobile">
             <ul class="menu menu--mobile">
                 <li class="menu__item"><a class="menu__link active" href="#home">
                     <i class="menu__icon bi bi-house-door"></i>
                     <span class="menu__text">Home</span>
                 </a></li>
-                <li class="menu__item"><a class="menu__link" href="#projetos">
+                <li class="menu__item"><a class="menu__link" href="#projects">
                     <i class="menu__icon bi bi-window-stack"></i>
                     <span class="menu__text">Projetos</span>
                 </a></li>
@@ -38,6 +56,281 @@
                 </a></li>
             </ul>
         </nav>
-        <h1>Eduardo Santana</h1>
+        <main id="home" class="home">
+            <div class="main__content1">
+                <h1><b>Soluções criativa</b> & desenvolvimento Front End</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <ul class="menu menu--social">
+                    <li>
+                        <a class="menu__link" href="">
+                            <i class="menu__icon bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="">
+                            <i class="menu__icon bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="">
+                            <i class="menu__icon bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#projects">
+                <button class="btn btn--primary"><span>Ver Projetos</span> <i class="bi bi-arrow-down-right"></i></button>
+                </a>
+            </div>
+            <div class="main__content2">
+                <iframe src="https://www.youtube.com/embed/E7bzUXwNaN4?si=fV53QJ-1GQA3T8Y8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </main>
+        <section class="skills">
+            <h2>
+                Conhecimento nas principais tecnologias do mercado
+            </h2>
+            <ul class="skills__list">
+                <li class="skills__item">
+                    <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                </li>
+                <li class="skills__item">
+                    <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                </li>
+                <li class="skills__item">
+                    <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                </li>
+                <li class="skills__item">
+                    <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                </li>
+            </ul>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projetos</h2>
+            <div class="projects__container">
+                <div class="projects__card">
+                    <img class="card__cover" src="assets/img/MDS (1).png" alt="">
+                    <div class="card__body">
+                        <h3 class="card__title">Um Titulo para a imagem</h3>
+                        <p class="card__description">uma bela descrição</p>
+                        <ul class="card__list">
+                            <li class="card__item">oque tem no quarto, item 1;</li>
+                            <li class="card__item">oque tem no quarto, item 2;</li>
+                            <li class="card__item">oque tem no quarto, item 3.</li>
+                        </ul>
+                        <ul class="skills__list">
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                        </ul>
+                        <div class="card__buttons">
+                            <button class="btn btn--primary"><span>Prévia</span> <i class="bi bi-arrow-up-right"></i></button>
+                            <button class="btn"><span>Repositório</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__card card--reverse">
+                    <img class="card__cover" src="assets/img/MDS (1).png" alt="">
+                    <div class="card__body">
+                        <h3 class="card__title">Um Titulo para a imagem</h3>
+                        <p class="card__description">uma bela descrição</p>
+                        <ul class="card__list">
+                            <li class="card__item">oque tem no quarto, item 1;</li>
+                            <li class="card__item">oque tem no quarto, item 2;</li>
+                            <li class="card__item">oque tem no quarto, item 3.</li>
+                        </ul>
+                        <ul class="skills__list">
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                        </ul>
+                        <div class="card__buttons">
+                            <button class="btn btn--primary"><span>Prévia</span> <i class="bi bi-arrow-up-right"></i></button>
+                            <button class="btn"><span>Repositório</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__card">
+                    <img class="card__cover" src="assets/img/MDS (1).png" alt="">
+                    <div class="card__body">
+                        <h3 class="card__title">Um Titulo para a imagem</h3>
+                        <p class="card__description">uma bela descrição</p>
+                        <ul class="card__list">
+                            <li class="card__item">oque tem no quarto, item 1;</li>
+                            <li class="card__item">oque tem no quarto, item 2;</li>
+                            <li class="card__item">oque tem no quarto, item 3.</li>
+                        </ul>
+                        <ul class="skills__list">
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__logo" src="./assets/img/knightNatal.png" alt="">
+                            </li>
+                        </ul>
+                        <div class="card__buttons">
+                            <button class="btn btn--primary"><span>Prévia</span> <i class="bi bi-arrow-up-right"></i></button>
+                            <button class="btn"><span>Repositório</span></button>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/EduardoKoneko"><button class="btn btn--primary"><span>Ver Todos os Projetos</span> <i class="bi bi-arrow-up-right"></i></button></a>
+            </div>
+        </section>
+
+        <section id="sobre" class="about">
+            <div class="about__content1">
+              <img class="about__photo" src="./assets/img/1692635382_new_iwtjxINFMwg.jpg" alt="">
+              <div class="about__description">
+                <h2>Sobre mim</h2>
+                <p>
+                    scripter em tempo livre, a primeira linguagem de programação que usei foi java, mas isso foi em um curso bem antigo, atualmente lembro no maximo um <i>System.Out.Println("Hello World")</i>. Estou tentando me tornar um programador partindo do principio que com estudo se chega a qualquer lugar
+                </p>  
+                <div class="about__icons">
+                  <i class="bi bi-translate"></i>
+                  <span>Inglês: Basico | Espanhol: Nenhum</span>
+                </div>
+                <div class="description__buttons">
+                  <a href="https://github.com/EduardoKoneko" target="_blank">
+                    <button class="btn btn--primary">
+                      <span>Conecte-se Comigo</span>
+                      <i class="bi bi-arrow-up-right"></i>
+                    </button> 
+                  </a>
+                  <a href="">
+                    <button class="btn">
+                      <span>Currículo</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="about__content2">
+              <div class="col1">
+                <div class="row1">
+                  <h3>Formação</h3>
+                  <h4>Desenvolvimento Web no tempo livre</h4>
+                  <span>dezembro 2024 - Atualmente</span>
+                  <div class="about__icons">
+                    <i class="bi bi-bank"></i>
+                    <span>Universidade Nenhuma</span>
+                  </div>
+                  <div class="about__icons">
+                    <i class="bi bi-mortarboard"></i>
+                    <span>Pós-graduação - Nenhuma</span>
+                  </div>
+                </div>
+                <div class="row2">
+                  <h3>Experiências</h3>
+                  <h4>Instrutora</h4>
+                  <span>Vagabundo - Atualmente</span>
+                  <span>Focado em estudar e tentar arranjar emprego</span>
+                  <ul class="about__list">
+                    <li class="about__item">HTML;</li>
+                    <li class="about__item">CSS;</li>
+                    <li class="about__item">JAVASCRIPT</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col2">
+                <h3>Cursos</h3>
+                <div id="accordion">
+                  <div class="accordion__item active">
+                    <button class="accordion__header start">
+                      <span>Front-end Hi-Happy</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body">
+                      <p>
+                        Digital Innovation One. dez 2024. 75h.
+                      </p>
+                      <p>
+                        "Domine a trinca fundamental do bom desenvolvedor Front-End com HTML, CSS e JAVASCRIPT, com uma base estruturada de conteúdos e 10 projetos práticos, incluindo páginas web responsivas e dinâmicas"
+                      </p>
+                    </div>
+                    </div>
+                    <div class="accordion__item">
+                    <button class="accordion__header">
+                      <span>Em aberto</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body">
+                      <p>
+                        Nenhuma ainda
+                      </p>
+                    </div>
+                    </div>
+                    <div class="accordion__item">
+                    <button class="accordion__header end">
+                      <span>Em aberto</span>
+                      <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="accordion__body end">
+                      <p>
+                        Nenhuma ainda
+                      </p>
+                    </div>
+                    </div>
+                </div>
+          </section>
+
+          <section id="contato" class="contact">
+            <h2>Contate-me</h2>
+            <p>Infelizmente meu unico meio de contato no momento é o discord
+            </p>
+            <ul class="menu menu--social">
+              <li>
+                <a class="menu__link" href="https://github.com/EduardoKoneko" target="_blank">
+                  <i class="menu__icon bi bi-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="" target="_blank">
+                  <i class="menu__icon bi bi-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a class="menu__link" href="" target="_blank">
+                  <i class="menu__icon bi bi-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </li>
+            </ul>
+            <a href="mailto:NãoExiste@Falso.com">
+              <button class="btn btn--primary">
+                <span class="email">NãoExiste@Falso.com</span>
+              </button>  
+            </a>
+          </section>
+
+        <footer>
+            <p>@ 2023. Todos os Direitos Reservados. Eduardo Santana. Desenvolvido por <a href="https://github.com/EduardoKoneko">ES</a></p>
+        </footer>
+        <script src="/assets/js/index.js"></script>
     </body>
 </html>
